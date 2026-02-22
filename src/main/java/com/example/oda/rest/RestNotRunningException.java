@@ -3,9 +3,7 @@ package com.example.oda.rest;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 
-import java.net.ConnectException;
-
-public class LocalRest {
+public class RestNotRunningException {
     public static void main(String[] args) {
         try {
             RestTemplate restTemplate = new RestTemplate();

@@ -31,7 +31,8 @@ public class RetryConfig {
     }
 
     @Bean
-    public RetryTemplate retryTemplate(SimpleRetryPolicy retryPolicy, ExponentialBackOffPolicy exponentialBackOffPolicy, AppRetryListenerSupport appRetryListenerSupport) {
+    public RetryTemplate retryTemplate(SimpleRetryPolicy retryPolicy, ExponentialBackOffPolicy exponentialBackOffPolicy,
+                                       AppRetryListenerSupport appRetryListenerSupport) {
         RetryTemplate retryTemplate = new RetryTemplate();
 
         retryTemplate.setBackOffPolicy(exponentialBackOffPolicy);

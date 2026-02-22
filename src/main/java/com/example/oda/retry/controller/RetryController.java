@@ -13,7 +13,8 @@ public class RetryController {
     private final RetryTemplateService retryTemplateService;
     private final RetryTemplate retryTemplate;
 
-    public RetryController(RetryableService retryableService, RetryTemplateService retryTemplateService, RetryTemplate retryTemplate) {
+    public RetryController(RetryableService retryableService, RetryTemplateService retryTemplateService,
+                           RetryTemplate retryTemplate) {
         this.retryableService = retryableService;
         this.retryTemplateService = retryTemplateService;
         this.retryTemplate = retryTemplate;
